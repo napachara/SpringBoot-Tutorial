@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      th:fragment="page">
+
+<head th:fragment="headTag">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:include="this :: title">Spring Boot Tutoial</title> 
+    
+      
+    <!-- Bootstrap -->   
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->   
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>          
+</head>
+
+<body>
+	<div class="row-fluid">
+		<div class="col-sm-12">
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<div class="starter-template"  th:include="this :: content">Content</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<br/>
+</body>
+
+</html>
